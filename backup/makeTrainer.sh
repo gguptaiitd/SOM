@@ -1,0 +1,1 @@
+/usr/local/cuda-9.0/bin/nvcc -Xptxas -O3 -I . ryggrad/src/base/FileParser.cc ryggrad/src/general/DNAVector.cc ryggrad/src/base/StringUtil.cc ryggrad/src/util/mutil.cc src/analysis/7s.cu ryggrad/src/ml/NNIO.cc ryggrad/src/ml/NNet.cc -o cuTrainer -lcublas
